@@ -1,0 +1,10 @@
+[
+{  
+    "keys": ["control+alt+i"], "command": "toggle_color_scheme",
+    "args":
+    {
+        "color_scheme_1": "Packages/Color Scheme - Default/Solarized (Light).tmTheme" ,
+        "color_scheme_2": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
+    }
+}
+]
