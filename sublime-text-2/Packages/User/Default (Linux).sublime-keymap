@@ -6,5 +6,8 @@
         "color_scheme_1": "Packages/Color Scheme - Default/Solarized (Light).tmTheme" ,
         "color_scheme_2": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
     }
+},
+{
+	"keys": ["ctrl+shift+d"], "command": "add_time_stamp"
 }
 ]
