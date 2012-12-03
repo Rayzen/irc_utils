@@ -2,6 +2,6 @@
 	<content><![CDATA[
 route add default gw ${1:ip} dev eth${2:0}up
 ]]></content>
-	<tabTrigger>routdef</tabTrigger>
+	<tabTrigger>rdef</tabTrigger>
 	<description>Add default gateway</description>
 </snippet>
