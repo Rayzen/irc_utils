@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+ifconfig eth${1:0} ${2:ip} up
+]]></content>
+	<tabTrigger>ifc</tabTrigger>
+</snippet>

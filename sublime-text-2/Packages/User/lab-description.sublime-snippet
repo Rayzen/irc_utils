@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+LAB_DESCRIPTION="${1:description}"
+LAB_VERSION=${2:0.1}
+LAB_AUTHOR="${3:Zoccoli	Antonio}"
+LAB_EMAIL=${4:ant.zoccol@stud.uniroma3.it}
+LAB_WEB=http://www.netkit.org/
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>labd</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

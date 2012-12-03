@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+$TTL 60000
+@     IN SOA   ${1:example.net}.     ${2:root.$1}. (
+                        $3 ;     serial
+                        21600 ;          refresh every 6 hours
+                        3600 ;           retry after one hour
+                        604800 ;         expire after a week
+                        0 ;        minimum TTL of 1 day
+                        )
+
+@               IN      NS              $1.
+$1.             IN      A               ${2:ip}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>soa</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Define SOA for the NS</description>
+</snippet>
