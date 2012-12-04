@@ -30,5 +30,6 @@ start_bgp(){
 }
 
 open_lab(){
-	./sublime_text -na $1 &
+	./sublime_text -na $1
+	./sublime_text -a $1/*
 }
