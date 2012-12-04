@@ -26,7 +26,7 @@ echo "source $HOME/netkit/utils/util.sh" >> $HOME/.bashrc
 
 echo
 echo "Add aliases to .bashrc"
-echo "alias ls='ls --color=auto"
+echo "alias ls='ls --color=auto -l"
 echo "alias tree='tree -C"
 
 echo
