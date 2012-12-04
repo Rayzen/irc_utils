@@ -3,6 +3,9 @@
 dir=$(dirname $0)
 
 ln -s $dir/netkit $HOME/netkit
+cp -f $dir/sublime-text-2/Packages/Color\ Scheme\ -\ Default/* $HOME/.config/sublime-text-2/Packages/Color\ Scheme\ -\ Default/
+cp -f $dir/sublime-text-2/Packages/User/* $HOME/.config/sublime-text-2/Packages/User/
+
 
 echo
 echo "Solarizing terminal"
