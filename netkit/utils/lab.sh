@@ -13,7 +13,7 @@ start_bind(){
 
 }
 
-start?apache(){
+start_apache(){
 
 }
 
