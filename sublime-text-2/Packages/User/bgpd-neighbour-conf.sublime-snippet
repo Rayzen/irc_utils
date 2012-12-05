@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+neighbor ${1:ip} remote-as ${2:as-number}
+neighbor $1 description Router ${3:router-name}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>np</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

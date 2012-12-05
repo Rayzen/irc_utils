@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+!
+ip access-list ${1:acl-name} permit ${2:regexp}
+ip access-list ${1:acl-name} deny ${3:regexp}
+!
+ip as-path access-list ${4:acl-name} permit ${5:regexp}
+ip as-path access-list ${4:acl-name} deny ${6:regexp}
+!
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ial</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

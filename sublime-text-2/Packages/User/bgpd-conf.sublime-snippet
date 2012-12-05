@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+!
+hostname bgpd
+password zebra
+enable password zebra
+!
+router bgp ${1:AS-number}
+network ${2:network}/${3:mask}
+network ${4:network}/${5:mask}
+!
+ip prefix-list as100In permit 100.1.0.0/16
+ip prefix-list defaultOut permit 0.0.0.0/0
+!
+log file /var/log/zebra/bgpd.log
+!
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bgpd</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

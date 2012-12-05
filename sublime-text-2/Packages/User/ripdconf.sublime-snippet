@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+!
+hostname ripd
+password zebra
+enable password zebra
+!
+router rip
+network ${1:lan}
+!redistribute connected
+!redistribute kernel
+!
+!
+log file /var/log/zebra/ripd.log
+!
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ripd</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.conf</scope>
+</snippet>

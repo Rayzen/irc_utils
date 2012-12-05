@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+!
+neighbor ${1:ip} remote-as ${2:as-number}
+neighbor ${1:ip} description Router ${3:as-name}
+neighbor ${1:ip} filter-list ${4:acl-name} in
+neighbor ${1:ip} filter-list ${5:acl-name} out
+!
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>nal</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

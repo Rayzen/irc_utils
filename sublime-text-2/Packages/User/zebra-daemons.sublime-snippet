@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+# This file tells the zebra package 
+# which daemons to start.
+# Entries are in the format: <daemon>=(yes|no|priority)
+# where 'yes' is equivalent to infinitely low priority, and
+# lower numbers mean higher priority. Read
+# /usr/doc/zebra/README.Debian for details.
+# Daemons are: bgpd zebra ospfd ospf6d ripd ripngd
+zebra=yes
+bgpd=${1:no}
+ospfd=${2:no}
+ospf6d=no
+ripd=${3:no}
+ripngd=no
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>daemons</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+</snippet>
