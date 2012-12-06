@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 init(){
 	local hws="$@"
-    for m in $hws; do
-        mkdir $m
+    	for m in $hws; do
+        	mkdir $m
         touch $m.startup
-    done
+	done
     touch lab.conf
 }
 
