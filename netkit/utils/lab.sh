@@ -42,7 +42,7 @@ start_zebra(){
 	local dest="etc/zebra"
 	for r in $router; do
 		if [[ -f $r.startup ]] && [[ -d $r ]]; then
-			echo "/etc/init.d/zebra start"
+			echo "/etc/init.d/zebra start" >> $r.startup
 			#touchp $r/$dest/zebra.conf
 			touchp $r/$dest/daemons
 			echo "Zebra activated on $r"
