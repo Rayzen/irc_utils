@@ -1,15 +1,10 @@
 <snippet>
 	<content><![CDATA[
 !
-ip prefix-list ${1:list-name} permit ${2:[any|network/mask]}
-ip prefix-list ${1:list-name} deny ${3:[any|network/mask]}
-!
-ip prefix-list ${4:list-name} permit ${5:[any|network/mask]}
-ip prefix-list ${4:list-name} deny ${6:[any|network/mask]}
-!
+ip prefix-list ${1:list-name} ${2:permit} ${3:any}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>ipl</tabTrigger>
+	<tabTrigger>pl</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

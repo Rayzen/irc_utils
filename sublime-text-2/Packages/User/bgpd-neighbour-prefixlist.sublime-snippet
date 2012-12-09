@@ -1,11 +1,7 @@
 <snippet>
 	<content><![CDATA[
 !
-neighbor ${1:ip} remote-as ${2:as-number}
-neighbor ${1:ip} description Router ${3:as-name}
-neighbor ${1:ip} prefix-list ${4:$3} in
-neighbor ${1:ip} prefix-list ${5:defaultOut} out
-!
+neighbor ${1:ip} prefix-list ${2:myList} ${3:in/out}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>npl</tabTrigger> -->
