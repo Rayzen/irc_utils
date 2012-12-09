@@ -13,7 +13,7 @@ echo "export PATH=$PATH:$HOME/netkit-util/bin" >> $HOME/.bashrc
 
 echo
 echo "Add sublime_text to PATH"
-echo "export PATH=$PATH:$HOME/netkit-util/Sublime\ Text\ 2"  >> $HOME/.bashrc
+#echo "export PATH=$PATH:$HOME/netkit-util/Sublime\ Text\ 2"  >> $HOME/.bashrc
 
 echo 
 echo "Add bash script to .bashrc"

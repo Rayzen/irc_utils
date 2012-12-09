@@ -4,8 +4,8 @@ init(){
 	local hws="$@"
     	for m in $hws; do
         	mkdir $m
-        touch $m.startup
-	done
+        	touch $m.startup
+		done
     touch lab.conf
 }
 
@@ -15,9 +15,9 @@ start_bind(){
     for m in $hws; do
         if [[ -f $m.startup ]] && [[ -d $m ]]; then
             echo "" >> $m.startup
-            echo "#\n/etc/init.d/bind start" >> $m.startup
-            mkdir -p $m/etc/bind
-            touch $m/etc/bind/named.conf
+            echo "/etc/init.d/bind start" >> $m.startup
+            touchp $m/etc/bind/named.conf
+            touchp $m/etc/bind/db.root
         fi
     done
 
@@ -29,9 +29,10 @@ start_apache(){
 	local dest="home/guest/public_html/index.html"
 	for s in $srv; do
 		if [[ -f $s.startup ]] && [[ -d $s ]]; then
-			echo "#\na2enmod userdir\n/etc/init.d/apache2 start" >> $s.startup
+			echo "a2enmod userdir" >> $s.startup
+			echo "/etc/init.d/apache2 start" >> $s.startup
 			touchp $s/$dest
-			echo "<html><body>Hello! This is $s speaking!!!</" >> $dest
+			echo "<html><body>Hello! This is $s speaking!!!</body></html>" >> $s/$dest
 		fi
 	done
 }
@@ -41,8 +42,8 @@ start_zebra(){
 	local dest="etc/zebra"
 	for r in $router; do
 		if [[ -f $r.startup ]] && [[ -d $r ]]; then
-			echo "#\n/etc/init.d/zebra start"
-			touchp $r/$dest/zebra.conf
+			echo "/etc/init.d/zebra start"
+			#touchp $r/$dest/zebra.conf
 			touchp $r/$dest/daemons
 			echo "Zebra activated on $r"
 		fi

@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-${1:domain}.        IN  NS      ${2:dns name}.
-$2.                 IN  A       ${3:ip}
+${1:domain}.        IN  NS      ${2:dns name}.$1
+$2.$1.                 IN  A       ${3:ip}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ns</tabTrigger> -->
