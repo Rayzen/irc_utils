@@ -9,17 +9,17 @@ cp -f $dir/sublime-text-2/Packages/User/* $HOME/.config/sublime-text-2/Packages/
 
 echo
 echo "add \$HOME/bin to PATH"
-echo "export PATH=$PATH:$HOME/netkit-util/bin" >> $HOME/.bashrc
+echo "export PATH=\$PATH:\$HOME/netkit-util/bin" >> $HOME/.bashrc
 
 echo
 echo "Add sublime_text to PATH"
-#echo "export PATH=$PATH:$HOME/netkit-util/Sublime\ Text\ 2"  >> $HOME/.bashrc
+echo "export PATH=\$PATH:$dir/st2"  >> $HOME/.bashrc
 
 echo 
 echo "Add bash script to .bashrc"
 echo "#Scripts" >> $HOME/.bashrc
-echo "source $HOME/netkit-util/utils/lab.sh" >> $HOME/.bashrc
-echo "source $HOME/netkit-util/utils/util.sh" >> $HOME/.bashrc
+echo "source \$HOME/netkit-util/utils/lab.sh" >> $HOME/.bashrc
+echo "source \$HOME/netkit-util/utils/util.sh" >> $HOME/.bashrc
 
 echo
 echo "Add aliases to .bashrc" 
@@ -30,7 +30,7 @@ echo "alias tree='tree -C">> $HOME/.bashrc
 echo
 echo "Solarizing terminal"
 sh $dir/netkit/env/colors/gnome-terminal-colors-solarized-master/set_dark.sh
-echo "xrdb -load $HOME/.Xresources" >> $HOME/.bashrc
+echo "xrdb -load \$HOME/.Xresources" >> $HOME/.bashrc
 
 echo
 echo "Loading new settings"
