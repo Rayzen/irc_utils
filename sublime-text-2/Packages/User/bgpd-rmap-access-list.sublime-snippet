@@ -4,7 +4,7 @@
 access-list	${1:myAcl} ${2:permit} ${3:networl}/${4:mask}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>acl</tabTrigger> -->
+	<tabTrigger>acl</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

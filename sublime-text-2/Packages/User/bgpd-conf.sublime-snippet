@@ -10,6 +10,13 @@ network ${2:network}/${3:mask}
 !
 log file /var/log/zebra/bgpd.log
 !
+debug bgp
+debug bgp events
+debug bgp filters
+debug bgp fsm
+debug bgp keepalives
+debug bgp updates 
+!
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>bgpd</tabTrigger>
