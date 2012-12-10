@@ -3,13 +3,13 @@
 dir=`dirname $0`
 echo $dir
 
-ln -sf $dir/st2/sublime_text $dir/netkit/bin/
+ln -sf $HOME/$dir/st2/sublime_text $dir/netkit/bin/
 ln -sf $dir/netkit $HOME/netkit-util
 ln -sf $dir/netkit/env/colors/Xresources $HOME/.Xresources
 
 echo
-echo "add \$HOME/bin to PATH"
-echo "export PATH=\$PATH:\$HOME/netkit-util/bin" >> $HOME/.bashrc
+echo "add \$HOME/netkit-util/bin to PATH"
+export PATH=$PATH:$HOME/netkit-util/bin
 
 ###Start sublime###
 sublime_text &
