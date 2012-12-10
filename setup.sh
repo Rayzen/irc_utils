@@ -10,11 +10,13 @@ ln -sf $dir/netkit/env/colors/Xresources $HOME/.Xresources
 echo
 echo "add \$HOME/netkit-util/bin to PATH"
 export PATH=$PATH:$HOME/netkit-util/bin
+echo "export PATH=\$PATH:\$HOME/netkit-util/bin" >> $HOME/.bashrc
 
 ###Start sublime###
 sublime_text &
 sublime_pid=$!
 echo $sublime_pid
+sleep 2 
 kill -9 $sublime_pid
 
 cp -f $dir/sublime-text-2/Packages/Color\ Scheme\ -\ Default/* $HOME/.config/sublime-text-2/Packages/Color\ Scheme\ -\ Default
@@ -29,7 +31,7 @@ echo "source \$HOME/netkit-util/utils/util.sh" >> $HOME/.bashrc
 echo
 echo "Add aliases to .bashrc" 
 echo "#Aliases" >> $HOME/.bashrc
-echo "alias ls='ls --color=auto -l" >> $HOME/.bashrc
+echo "alias ls=ls --color=auto -l" >> $HOME/.bashrc
 
 echo
 echo "Solarizing terminal"
