@@ -2,6 +2,8 @@
 
 dir=`dirname $0`
 echo $dir
+
+ln -sf $dir/st2/sublime_text $dir/netkit/bin/
 ln -sf $dir/netkit $HOME/netkit-util
 ln -sf $dir/netkit/env/colors/Xresources $HOME/.Xresources
 
