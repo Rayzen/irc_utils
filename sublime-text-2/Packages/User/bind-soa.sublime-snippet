@@ -19,5 +19,3 @@ $1.${5:$2}            IN      A               ${6:ip}
 	<!-- <scope>source.python</scope> -->
 	<description>Define SOA for the NS</description>
 </snippet>
-
-

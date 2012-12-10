@@ -35,4 +35,3 @@ echo "xrdb -load $HOME/.Xresources" >> $HOME/.bashrc
 echo
 echo "Loading new settings"
 source $HOME/.bashrc
-
