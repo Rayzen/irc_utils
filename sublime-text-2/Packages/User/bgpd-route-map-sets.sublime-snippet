@@ -1,11 +1,10 @@
 <snippet>
 	<content><![CDATA[
-.        		IN  NS      root-server.
-root-server.	IN  A       ${1:ip}
+!
+route-map ${1:myMap} ${2:permit} ${3:10}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>nsr</tabTrigger> -->
+	<tabTrigger>rmap</tabTrigger> -->
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
-	<description>Insert root NS and A records</description>
 </snippet>
