@@ -2,8 +2,9 @@
 
 dir=`dirname $0`
 echo $dir
-ln -s $dir/netkit $HOME/netkit-util
-ln -s $dir/netkit/env/colors/Xresources $HOME/.Xresources
+ln -sf $dir/netkit $HOME/netkit-util
+ln -sf $dir/netkit/env/colors/Xresources $HOME/.Xresources
+
 cp -f $dir/sublime-text-2/Packages/Color\ Scheme\ -\ Default/* $HOME/.config/sublime-text-2/Packages/Color\ Scheme\ -\ Default
 cp -f $dir/sublime-text-2/Packages/User/* $HOME/.config/sublime-text-2/Packages/User
 
@@ -11,9 +12,11 @@ echo
 echo "add \$HOME/bin to PATH"
 echo "export PATH=\$PATH:\$HOME/netkit-util/bin" >> $HOME/.bashrc
 
-echo
-echo "Add sublime_text to PATH"
-echo "export PATH=\$PATH:$dir/st2"  >> $HOME/.bashrc
+sublime_text &
+sublime_pid=$!
+echo $sublime_pid
+kill -9 $sublime_pid
+
 
 echo 
 echo "Add bash script to .bashrc"
