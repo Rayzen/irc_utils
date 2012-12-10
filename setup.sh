@@ -36,7 +36,7 @@ echo "xrdb -load \$HOME/.Xresources" >> $HOME/.bashrc
 
 echo
 echo "Start simpleswitcher"
-echo "simpleswitcher 2>/dev/null &" >> $HOME/.bashrc
+simpleswitcher &
 
 echo
 echo "Loading new settings"
