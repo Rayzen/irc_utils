@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
-${1:domain}        IN  NS      ${2:dns}.$1${4:.${3:com}.}
-$2.$1                 IN  A       ${5:ip}
+.        		IN  NS      root-server.
+root-server.	IN  A       ${1:ip}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>ns</tabTrigger> -->
+	<tabTrigger>nsr</tabTrigger> -->
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 	<description>Insert NS and A records</description>

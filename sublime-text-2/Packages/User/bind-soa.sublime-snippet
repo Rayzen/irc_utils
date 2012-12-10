@@ -1,16 +1,17 @@
 <snippet>
 	<content><![CDATA[
 \$TTL 60000
-@     IN SOA   ${1:example.net}.     ${2:root.$1}. (
-                        ${3:serial};     serial
+@     IN SOA   ${1:dns}.${2:domain.}     ${3:root.$1.$2} (
+                        ${4:sctrl+shift+d};     serial
                         21600 ;          refresh every 6 hours
                         3600 ;           retry after one hour
                         604800 ;         expire after a week
                         0 ;        minimum TTL of 1 day
                         )
 
-@               IN      NS              $1.
-$1.             IN      A               ${4:ip}
+@              IN      NS              $1.$2
+$1.${5:$2}            IN      A               ${6:ip}
+
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>soa</tabTrigger>
@@ -18,3 +19,5 @@ $1.             IN      A               ${4:ip}
 	<!-- <scope>source.python</scope> -->
 	<description>Define SOA for the NS</description>
 </snippet>
+
+

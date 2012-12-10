@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dir=`pwd`
+dir=`dirname $0`
 echo $dir
 ln -s $dir/netkit $HOME/netkit-util
 ln -s $dir/netkit/env/colors/Xresources $HOME/.Xresources
