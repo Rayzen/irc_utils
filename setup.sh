@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-dir=`dirname $0`
+source_script=`pwd`/$0
+dir=`dirname $source_script`
 echo $dir
 
-ln -sf $HOME/$dir/st2/sublime_text $dir/netkit/bin/
+
+ln -sf  $dir/st2/sublime_text $dir/netkit/bin/
 ln -sf $dir/netkit $HOME/netkit-util
 ln -sf $dir/netkit/env/colors/Xresources $HOME/.Xresources
 
@@ -13,6 +15,7 @@ export PATH=$PATH:$HOME/netkit-util/bin
 echo "export PATH=\$PATH:\$HOME/netkit-util/bin" >> $HOME/.bashrc
 
 ###Start sublime###
+#./$dir/st2/sublime_text &
 sublime_text &
 sublime_pid=$!
 echo $sublime_pid
